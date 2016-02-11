@@ -1,0 +1,43 @@
+$font-stack:    Helvetica, sans-serif;;
+$textcolor: pink;
+
+
+
+body {
+	background-color: turquoise;
+	font: 100% $font-stack;
+}
+.input-area {
+	z-index: 1000;
+}
+.tshirt {
+	position: absolute;
+}
+
+.print-surface {
+	color: $textcolor;
+	line-height: 0.5em;
+	letter-spacing: 0.2em;
+	margin-top: -40px;
+	padding: 145px;
+	position: absolute;
+	z-index: 100;
+
+}
+
+p {
+	text-align: center;
+}
+
+.wrapper .description{
+	background: blue;
+}
+
+.wrapshow {
+	background: blue;
+}
+
+.fancytext {
+	word-wrap: break-word;
+}
+
