@@ -19,7 +19,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">{{ company.name }}</a>
+          <p class="navbar-brand" >{{ company.name }}</p>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
@@ -38,9 +38,9 @@
     </nav>
   </header>
 
-
-    <div class="box container" ng-view></div>
-
+  <div class="wrapper">
+    <div class="box container reveal-animation" ng-view></div>
+  </div>
 
 
 
@@ -49,7 +49,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.2.0/lodash.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-animate.min.js"></script>
   <script src="js/app.js"></script>
   <script>
 $(document).ready(function () {

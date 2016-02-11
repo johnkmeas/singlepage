@@ -2,6 +2,9 @@ body {
   background-color: turquoise;
   font: 100% Helvetica, sans-serif; }
 
+.main-page {
+  background-color: pink; }
+
 .input-area {
   z-index: 1000; }
 
@@ -28,5 +31,32 @@ p {
 
 .fancytext {
   word-wrap: break-word; }
+
+/* ANIMATIONS
+============================================================================= */
+.wrapper {
+  position: relative;
+  height: 120px; }
+
+.reveal-animation {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.reveal-animation.ng-enter, .reveal-animation.ng-leave {
+  -webkit-transition: 5s linear all;
+  transition: 5s linear all; }
+
+.reveal-animation.ng-enter {
+  opacity: 0; }
+
+.reveal-animation.ng-enter.ng-enter-active {
+  opacity: 1; }
+
+.reveal-animation.ng-leave {
+  opacity: 1; }
+
+.reveal-animation.ng-leave.ng-leave-active {
+  opacity: 0; }
 
 /*# sourceMappingURL=style.css.map */

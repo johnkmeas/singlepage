@@ -1,10 +1,10 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate']);
 
 myApp.config(function ($routeProvider) {
 
 	$routeProvider
 	.when('', {
-		templateUrl: 'index.html',
+		templateUrl: 'page/main.html',
 		controller: 'MainCtrl'
 	})
 	.when('/', {
@@ -174,6 +174,24 @@ myApp.controller('contactController', ['$scope', function($scope) {
 myApp.controller('LoginController', ['$scope', function($scope) {
 
 }]);
+
+myApp.animation('.reveal-animation', function() {
+  return {
+    enter: function(element, done) {
+      element.css('display', 'none');
+      element.fadeIn(300, done);
+      return function() {
+        element.stop();
+      }
+    },
+    leave: function(element, done) {
+      element.fadeOut(300, done)
+      return function() {
+        element.stop();
+      }
+    }
+  }
+})
 
 
 //	$scope.name = nameService.name;
